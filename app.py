@@ -46,37 +46,3 @@ if uploaded_file:
 
     finally:
         os.unlink(tmp_path)
-```
-
-「Commit changes」で保存。
-
----
-
-## ステップ③④：Streamlitに登録してデプロイ
-
-1. [share.streamlit.io](https://share.streamlit.io) を開く
-2. 「**Sign up with GitHub**」でログイン（GitHubアカウントをそのまま使える）
-3. 「**New app**」をクリック
-4. 以下を選択・入力：
-   - Repository：`pdf-to-csv`
-   - Branch：`main`
-   - Main file path：`app.py`
-5. 「**Deploy!**」をクリック
-6. 2〜3分待つと URLが発行される 🎉
-
----
-
-## 完成イメージ
-```
-https://あなたの名前-pdf-to-csv-app-xxxx.streamlit.app
-```
-
-このURLをブラウザで開くと…
-```
-┌─────────────────────────────────┐
-│  📊 PDF → CSV 変換ツール         │
-│                                  │
-│  [ PDFを選択してください ]        │
-│                                  │
-│  ※ドラッグ＆ドロップもOK         │
-└─────────────────────────────────┘
